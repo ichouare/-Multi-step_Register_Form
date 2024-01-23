@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js" defer ></script>
+    <title>Regiter Form</title>
+</head>
+<body>
+
+  <main id="step1">
+    <h1>
+        register
+    </h1>
+    <Form>
+      <div>
+        <label for="Name" >name</label>
+        <input id="Name" type="text" placeholder="your name" required/>
+        <span class="errorMsg"></span>
+        </div>
+        <div>
+            <label for="email" >email</label>
+            <input id="email" type="text" placeholder="exemple@gmail.com" required/>
+            <span class="errorMsg"></span>
+        </div>
+        <button  class="btn_sumbit" type="submit" id="btn">continue</button>
+    </Form>
+  </main>
+
+  <main  id="step2">
+    <h1>Which topics you are interested in?</h1>
+    <div class="Topis_btns">
+      <span class="errorMsg"></span>
+    </div>
+    <button class="btn_sumbit" type="submit" id="btn1" >confirm</button>
+</main>
+
+  <main  id="step3">
+    <h1>Summary</h1>
+    <div class="Summary">
+    </div>
+    <button class="btn_sumbit" type="submit" id="btn2" >confirm</button>
+</main>
+  <div class="steps">
+    <p>step 1 of 3</p>
+    <ul>
+        <li><span class="bg shadow"></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+  </div>
+</body>

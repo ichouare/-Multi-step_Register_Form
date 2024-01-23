@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap');
+:root{
+    --bg-cl :#652CD1;
+    --second-bg-cl: #845EEE;
+    --black-cl :#121826;
+    --back-medium-cl: #212936;
+    --gris-cl:#394150;
+    --gris-medium-cl:#4D5562;
+    --white-cl:#E5E7EB;
+    --white-medium-cl: #A1A1A9;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-cl);
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+
+
+.errorMsg{
+    color: red;
+    width: 100%;
+    height: 10px;
+    font-size: 0.758rem;
+    text-align: center;
+}
+
+body{
+    max-width:100vw;
+    min-height:100vh;
+    background-image: linear-gradient(100deg, var(--black-cl) 100% , var(--bg-cl) 20%  );
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    row-gap:1rem;
+    color:var(--white-cl);
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+main{
+    width: min(100vw, 450px);
+    height: 370px;
+    min-height: 45vh;
+    background-color:var( --back-medium-cl);
+    display:grid;
+    grid-template-rows: 5% 1fr;
+    padding: 2rem max(3%, 1rem);
+    border : 1px solid var(--gris-medium-cl);
+    border-radius:0.9rem;
+    row-gap:1.5rem;
+    position: absolute;
+    transition: all 0.3s;
+}
+main>button{
+    display: inline-block;
+    margin: 0 auto;
+}
+main h1{
+    width: 100%;
+    font-size:1.25rem;
+    font-weight:500;
+    text-transform:capitalize;
+}
+main Form{
+    display:block;
+    display :flex;
+    /* height:100%; */
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:space-around;
+    /* gap:0.7rem; */
+}
+main Form div{
+    width:100%;
+    font-size: 0.75rem;
+    display:inherit;
+    flex-direction: column;
+    text-transform:capitalize;
+    gap:10px;
+    color: var(--white-medium-cl);
+    font-weight: 500;
+}
+main Form div input{
+    width:100%;
+    padding:4%;
+    border:2px solid var(--gris-medium-cl);
+    background: transparent;
+    border-radius:13px;
+    outline:none;
+    color:var(--white-cl);
+}
+main Form div input:focus{
+    border:2px solid var( --second-bg-cl);
+}
+
+
+
+body .steps{
+    position: absolute;
+    bottom: max(80px, 16%);
+    left: minmax(30%, 40rem);
+    width: min(100vw, 200px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 0.75em;
+    color: var(--gris-medium-cl);
+   
+}
+body .steps ul{
+    width: 30%;
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+body .steps ul li span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:var(--gris-medium-cl);
+
+}
+body .steps ul li .bg{
+    background-color:var(--bg-cl);
+}
+body .steps ul li .shadow{
+    box-shadow: 0px 0px 5px 2px var(--bg-cl);
+}
+
+
+main .Topis_btns{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    gap:1rem;
+}
+main .Topis_btns button{
+    padding: 1rem;
+    background-color: var(--gris-cl);
+    border: none;
+    outline: none;
+    color: var(--white-medium-cl);
+    text-align: left;
+    border-radius: 14px;
+    border: 1px solid var(--gris-medium-cl);
+    font-size: 0.875rem;
+    font-weight: 400;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+
+main .Topis_btns  .Selected{
+    background-color: var(--bg-cl);
+    border: 1px solid var(--second-bg-cl);
+    color : var(--white-cl);
+}
+
+.btn_sumbit{
+    color: var(--white-cl);
+    background-image: linear-gradient(var(--bg-cl) 10%, var(--second-bg-cl));
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 1.5rem;
+    font-family: 1rem;
+    font-weight: 600;
+    align-self: center ;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#step3 .Summary {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+#step3 .Summary  div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    gap:1rem;
+}
+#step3 .Summary  div p{
+    color: var(--white-cl);
+}
+#step3 .Summary  div p span{
+    color: var(--gris-medium-cl);
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-right: 10px;
+}
+#step3 .Summary  div ul{
+    margin-left: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    gap:0.5rem;
+    font-weight: 600;
+}
+.notif{
+width: 180px;
+height: 50px;
+background-color: var(--white-cl);
+ position: absolute;
+ top: 50px;
+ right: 50px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-evenly;
+ font-size: 1rem;
+ color: var(--gris-medium-cl);
+ overflow: hidden;
+}
+
+.notif::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s linear;
+    animation: toggle 0.5s   backwards ;
+}
+
+
+#step2{
+    
+    left: 100%;
+    
+}
+#step3{
+    position: absolute;
+    left: 100%;
+}
+
+@keyframes toggle {
+  100%{
+    /* width: 0px; */
+    transform:  translateX(-100%);
+    /* width: 100px; */
+  } 
+}
